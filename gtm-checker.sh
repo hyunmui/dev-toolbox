@@ -102,7 +102,7 @@ urls=(
 )
 
 # GTM 스크립트
-gtm_script="https://www.googletagmanager.com/gtm.js?id=GTM-XXXXXXX"
+gtm_script="https://www.googletagmanager.com/gtm.js?id="
 
 # URL 목록에서 GTM 설치 여부 확인
 for url in "${urls[@]}"
