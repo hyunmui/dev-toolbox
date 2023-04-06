@@ -107,7 +107,7 @@ gtm_script="https://www.googletagmanager.com/gtm.js?id="
 # URL 목록에서 GTM 설치 여부 확인
 for url in "${urls[@]}"
 do
-    if curl -s "$url" | grep -q "$gtm_script"; then
+    if curl -sL "$url" | grep -q "$gtm_script"; then
         echo "GTM is installed on $url"
     else
         echo "GTM is not installed on $url"
